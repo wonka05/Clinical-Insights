@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 Create a .env file:
 
-GOOGLE_API_KEY=your_api_key_here
+GOOGLE_API_KEY = your_api_key_here
 
 Run the app:
 
