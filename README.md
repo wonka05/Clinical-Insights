@@ -2,9 +2,9 @@
 
 ```text
 A Flask application that analyzes medical PDF reports using Google Gemini 2.5 Pro and presents the results in a clean, patient-friendly dashboard.
--Includes two modes of interaction:
--PDF Upload → AI Dashboard Summary
--Interactive Medical Chatbot
+- Includes two modes of interaction:
+- PDF Upload → AI Dashboard Summary
+- Interactive Medical Chatbot
 ```
 
 ## Features:
