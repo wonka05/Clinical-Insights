@@ -10,13 +10,13 @@ A Flask application that analyzes medical PDF reports using Google Gemini 2.5 Pr
 ## Features:
 
 ```text
--PDF Report Interpretation: Extracts text from uploaded PDFs and generates structured insights: severity, abnormal findings, precautions, medication caution, and physician recommendation.
+- PDF Report Interpretation: Extracts text from uploaded PDFs and generates structured insights: severity, abnormal findings, precautions, medication caution, and physician recommendation.
 
--Medical Chatbot: Interactive chat interface producing the same structured MedicalAnalysis output.
+- Medical Chatbot: Interactive chat interface producing the same structured MedicalAnalysis output.
 
--Schema-Guaranteed Safety: Uses Pydantic models to enforce safe, consistent AI responses.
+- Schema-Guaranteed Safety: Uses Pydantic models to enforce safe, consistent AI responses.
 
--Modern UI: Template-driven frontend with responsive design and severity visuals.
+- Modern UI: Template-driven frontend with responsive design and severity visuals.
 ```
 
 ## Tech Stack:
