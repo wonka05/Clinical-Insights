@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from pypdf import PdfReader
-from models import MedicalAnalysis
+from schemas import MedicalAnalysis
 
 load_dotenv()
 

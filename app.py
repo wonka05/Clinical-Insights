@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, redirect, flash, session, url
 from werkzeug.utils import secure_filename
 
 from analyzer_core import extract_text_from_pdf, analyze_report_with_gemini
-from models import MedicalAnalysis
+from schemas import MedicalAnalysis
 from database import db
 
 # Load environment variables
