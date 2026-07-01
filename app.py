@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 
 from analyzer_core import extract_text_from_pdf, analyze_report_with_gemini
 from schemas import MedicalAnalysis
-from database import db
+from database.db import db
 
 # Load environment variables
 load_dotenv()
@@ -125,7 +125,9 @@ def chat_api():
 # Test Database Connection
 with app.app_context():
     try:
-        db.create_all()
+        with app.app_context():
+            db.create_all()
+            print("✅ Database tables created successfully!")
         print("✅ Database connected successfully!")
     except Exception as e:
         print(f"❌ Database connection failed: {e}")
