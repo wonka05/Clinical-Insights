@@ -1,4 +1,3 @@
-#analyzer_core.py
 import os
 from dotenv import load_dotenv
 from google import genai
@@ -6,18 +5,11 @@ from google.genai import types
 from pypdf import PdfReader
 from models import MedicalAnalysis
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Initialize Gemini client
 client = genai.Client()
 
-
 def extract_text_from_pdf(pdf_stream) -> str:
-    """
-    Extract text content from a PDF file stream.
-    Returns the extracted text or an empty string if extraction fails.
-    """
     try:
         reader = PdfReader(pdf_stream)
         text = ""
@@ -35,10 +27,7 @@ def extract_text_from_pdf(pdf_stream) -> str:
         return ""
 
 def analyze_report_with_gemini(report_text: str) -> MedicalAnalysis | dict:
-    """
-    Analyze the extracted medical report text using Gemini AI.
-    Returns a MedicalAnalysis object on success or dict with error details on failure.
-    """
+ 
     if not report_text:
         return {"error": "Empty input."}
 

@@ -1,4 +1,3 @@
-# models.py
 from pydantic import BaseModel, Field
 from typing import List, Literal
 
@@ -7,7 +6,7 @@ Severity = Literal["Low", "Moderate", "High - Urgent Visit Recommended", "Critic
 DoctorType = Literal["General Practitioner", "Cardiologist", "Endocrinologist", "Oncologist", "Pediatrician", "Gastroenterologist", "Other Specialist"]
 
 class MedicalAnalysis(BaseModel):
-    """Structured data output for the medical report analysis."""
+   
     severity_analysis: Severity = Field(
         description="Overall severity level based on the report findings."
     )
@@ -15,7 +14,7 @@ class MedicalAnalysis(BaseModel):
         description="A list of 3-5 most critical or abnormal findings from the report in patient-friendly language."
     )
     precautions_and_next_steps: List[str] = Field(
-        description="Clear, actionable steps and precautions the patient should take immediately (e.g., monitor blood pressure, change diet)."
+        description="Clear, actionable steps and precautions the patient should take immediately (e.g., monitor blood pressure, change diet, check pulse)."
     )
     medication_suggestion: str = Field(
         description="A cautious suggestion regarding potential medication/supplement needs. Must start with a strong disclaimer: 'CONSULT A DOCTOR. This AI cannot prescribe medications.'"
