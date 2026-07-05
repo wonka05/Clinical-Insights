@@ -23,8 +23,8 @@ A Flask application that analyzes medical PDF reports using Google Gemini 2.5 Pr
 
 ```text
 Backend: Python, Flask, Pydantic
-AI: Google Gemini (via google-genai)
-Frontend: HTML, CSS (custom modern theme)
+AI: Google Gemini 
+Frontend: HTML, CSS 
 PDF Extraction: pypdf
 Config: .env for API keys
 ```
@@ -37,7 +37,7 @@ clinical-insights/
 │── analyzer_core.py           # PDF text extraction + Gemini request
 │── models.py                  # Pydantic MedicalAnalysis schema
 │── requirements.txt
-│── .env                       # API key (not committed)
+│── .env                       # API key 
 │── static/
 │     ├── style.css
 │     ├── doctor.svg
